@@ -63,7 +63,7 @@ li a:hover:not(.active) {
         
     }
     
-     #RyanPic{
+     .RyanPic{
     max-width: 400px;
     margin-left: auto;
     margin-top: 80px;
@@ -167,7 +167,7 @@ li a:hover:not(.active) {
         
     }
       
-         #RyanPic{
+         .RyanPic{
     min-height: 10px;         
     max-width: 750px;
     margin-left: auto;
@@ -200,10 +200,34 @@ li a:hover:not(.active) {
 
 </ul>
      
+<div class="RyanPic" style="width:auto">
+ <img class="mySlides" src="Ryan_photo.png" style="width:auto">
+  <img class="mySlides" src="Ryan_2.png" style="width:auto">
+  <img class="mySlides" src="Ryan_3.png" style="width:auto">
+</div>
      
- <div id = "RyanPic">
-        <img src = "Ryan.jpg" alt="Picture of Ryan sitting on a bench"/>
- </div> 
+     
+     <script>
+         var slideIndex = 0;
+         
+         carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}    
+    x[slideIndex-1].style.display = "block";  
+    setTimeout(carousel, 5000); // Change image every 2 seconds
+}
+         
+       
+         
+
+</script>
     
      <table border="0" style="width: auto">
       <tr>
