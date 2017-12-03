@@ -1,5 +1,3 @@
-// Ryan Merkley  r2merkle
-
 float [] XposButton = new float [2]; // x position of menu button
 float [] YposButton = new float [2]; // y position of menu button
 float [] XposMButton = new float [1]; // x position of return button
@@ -10,7 +8,7 @@ boolean Buttons1 = true; // turns menu buttons on or off
 boolean Buttons2 = true; // turns return button on or off
 PImage sadFace;
 PImage happyFace; 
-int lives = 3; // (USES BEST USE OF "GLOBAL VARIABLES") lives for turtle
+int lives = 3; // lives for turtle
 int counter = 0; // score of the game
 int minRandom = 100; // minimum value for object sizes
 int maxRandom = 150; // maximum value for object sizes
@@ -37,7 +35,6 @@ void setup() {
 void starter() {
   TurtleChar = new turtle(TurtleStartingXpos, TurtleStartingYpos); // starting position of turtle
 
-  // (USES BEST USE OF "USER DEFINED OBJECTS")
   // sets all starting positions, speeds, and random sizes for logs
   Logs[0] = new Log(25, 55, 3, random(minRandom, maxRandom));
   Logs[1] = new Log(300, 55, 3, random(minRandom, maxRandom));
@@ -154,7 +151,6 @@ void draw() {
     textSize(20);
     text("Press the spacebar to play again.", 90, height / 2 + 20);
 
-    // (USES BEST USE OF "LOAD AND DISPLAY IMAGES")
     image(happyFace, 125, 10, 250, 250); // happy face image
 
     // resets the turtles position
@@ -164,7 +160,6 @@ void draw() {
 }
 
 void keyPressed() {
-  // (USES BEST USE OF "EVENT FUNCTIONS")
   // moves turtle in different directions only if the game if running,
   // score isn't max level, and turtle has lives left
   if (selected == 0 && counter < 5 && lives > 0 && key == 'd') {
@@ -212,7 +207,6 @@ void mousePressed() {
     menuselected = -1;
   }
 
-  // (USES BEST USE OF "LOOPS")
   // enables how to play menu when menu button is pressed
   if (Buttons1 == true) {
     for (int i = 0; i < 2; i++) {
@@ -322,7 +316,7 @@ void HowToPlay() {
   text("will have to start over from the beginning.", 10, 400);
 }
 
-// (USES BEST USE OF FUNCTIONS) creates a turtle, sets its starting positions, and its ability to move
+// creates a turtle, sets its starting positions, and its ability to move
 class turtle { 
   // turtle properties
   float TurtleX; // x coordinates
@@ -402,7 +396,6 @@ class Car {
       hue = random(0, 255); // randomizes color of the car
     }
 
-    // (USES BEST USE OF CONDITIONALS)
     // checks to see if car intersects with the turtle. takes in the 
     // turtles and cars x and y coordinates, width and height of car
     if (hitTest(TurtleChar.TurtleX, TurtleChar.TurtleY, x, y, 60, 40)) {
@@ -445,7 +438,7 @@ class Van {
   float hue; // color
   float speed; // speed
 
-  //constructor that initializes the vans properties. It takes in a x and y coordinate, color, and speed
+  // constructor that initializes the vans properties. It takes in a x and y coordinate, color, and speed
   Van(float xIn, float yIn, float speedIn, float hueIn) {
     x = xIn;
     y = yIn;
@@ -517,7 +510,6 @@ void GameBackground() {
   rect(0, 50, width, 195);  // lake
 }
 
-// (USES BEST USE OF "RECTANGLE HIT TEST")
 // calculates the distance from one object to another. takes in the first and second 
 // objects x and y coordinates, and the width and height of the second object
 boolean hitTest(float x, float y, float rx, float ry, float rw, float rh) {
@@ -582,48 +574,3 @@ class Log {
     line(x + 5, y + 25, x + size - 5, y + 25);
   }
 }
-
-/*
-VIDEO
-https://vimeo.com/193750044
-
-INSTRUCTIONS
-You are a turtle named Mr. Turtle and you must escape an obstacle course in order to 
-get home safely. There are two sections that you must cross in each level. The first section
-is a highway full of fast moving and speeding cars. The second section is a lake filled 
-with tree logs that you must dodge. The water doesn't kill you in this game, rather you
-use it to move through the lake. Don't jump onto the logs as they will kill you. 
-You start at the bottom of the canvas and must complete each the sections 5 times in a row 
-in order to win the game. You are given 3 lives to complete this goal. If you lose all 
-three of your lives, the game ends and you must start over from the beginning.
-
-Controls:
-- Use the mouse and click on buttons to navigate through the main menu. Mouse is only used in the main menu
-- Press the "W" key to move Mr. Turtle up
-- Press the "S" key to move Mr. Turtle down
-- Press the "A" key to move Mr. Turtle to the left
-- Press the "D" key to move Mr. Turtle to the right
-- Press the "Spacebar" to restart the game (only when you win or lose the game)
-
-CODING QUALITY AND DESIGN
-I believe that my coding quality and visual design are great because of many reasons. I was able 
-to incorporate most of the concepts that we learned throughout the course into my program as well as create
-a design that follows the flow of an old fashioned video game. I was able to expand off the basic concepts learned
-in class, to enchance the overall design of my program. The part of code that I'm most the proud of would be my 
-main menu section at the beginning of the program. The reason why I like this section so much is because I was able 
-to fix a tedious problem that kept me from further progressing into my program. While coding this section, I ran 
-into a problem that when the game started the menu buttons were still active and would freeze my game whenever 
-the mouse clicked the screen. I remember trying many different strategies, but none of them worked. After taking 
-the time to review my code I realized that I should've used a boolean for my menu buttons to turn them on and off. After 
-implementing this strategy, my game didn't freeze and I was able to continue coding the rest of my game.
-
-I also liked the section where I created 4 seperate functions for the turtles movement. In my opinion, the way 
-I coded this area made my code look a lot more elegant. Instead of having it all clumped into a single "if" 
-statement and having a bunch of random numbers everywhere, I was able to seperate each movement into an individual 
-function with global variables. This made it look a lot better, and easier to interpret.
-
-RELEASE
-I Ryan Merkley grant permission to CS 105 course staff to use
-my Assignment 9 program and video for the purpose of promoting CS 105.
-(if you don't grant permission, erase the line above)
-*/
