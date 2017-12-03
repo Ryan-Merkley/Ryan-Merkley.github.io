@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-     <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="shortcut icon" href="Prism.png">
-<link rel="apple-touch-icon" href="Prism.jpg">
+  <link rel="shortcut icon" href="Prism.png">
+  <link rel="apple-touch-icon" href="Prism.jpg">
 	
-	<title>RDMerkley</title>
+  <title>RDMerkley</title>
+	
 <style>
     
-    .main {
-	margin: 0 auto;
+.main {
+    margin: 0 auto;
     max-width: 1250px;
     margin-bottom: 100px;
-	background-color: #FFFFFF;
-	padding: 75px;
+    background-color: #FFFFFF;
+    padding: 75px;
     font-family: "Verdana", sans-serif;
-        
 }
     
 ul {
@@ -45,113 +44,78 @@ li a:hover:not(.active) {
    color: black;
 }
     
-   
+#Menubar{
+   font-size: 12px;
+}
     
-    #Menubar{
-        
-    
-        font-size: 12px;
-        
-    }
-    
-   
-    
-    
-  
-     
-    
-    #Intro{
+#Intro{
     line-height: 150%;
     margin-top: -772px;
     margin-bottom: 40px;
     margin-right: 920px;
     margin-left: 0px;
-    }
-    
-    #Homeheader{
-        line-height: 150%;
-    font-size: 25px;  
-        
-    }
-
-    #homeText{
-     
-    font-size: 12px;   
-        
-    }
-    
-     .embed-container { 
-    
-    
-      max-width: 770px;      
-        margin-left: auto;
-        margin-top: 90px;
-    } 
-    
-     #table2, #table2 th, #table2 td {
-        line-height: 150%;
-     font-family: "Verdana", sans-serif;
-     font-size: 14px;
-        
-   
-    
 }
     
+#Homeheader{
+    line-height: 150%;
+    font-size: 25px;  
+}
+
+#homeText{
+    font-size: 12px;   
+}
     
-    #table2 {
+.embed-container { 
+    max-width: 770px;      
+    margin-left: auto;
+    margin-top: 90px;
+} 
+    
+#table2, #table2 th, #table2 td {
+    line-height: 150%;
+    font-family: "Verdana", sans-serif;
+    font-size: 14px;
+}
+    
+#table2 {
     max-width: 640px;    
     padding-right: 900px;
-      
-      margin-left: auto;
-       margin-top: -740px;
-
-    
-    }
-    
-     #table3, #table3 th, #table3 td {
-        line-height: 150%;
-     font-family: "Verdana", sans-serif;
-     font-size: 14px;
-        
-   
-    
+    margin-left: auto;
+    margin-top: -740px;
 }
     
+#table3, #table3 th, #table3 td {
+    line-height: 150%;
+    font-family: "Verdana", sans-serif;
+    font-size: 14px;
+}
     
-    #table3 {
+#table3 {
     display: none;
     max-width: 640px;    
     padding-right: 900px;
-      
-      margin-left: auto;
-      margin-top: -740px;
-
+    margin-left: auto;
+    margin-top: -740px;
+}
     
-    }
+#video2 {
+    display: none;
+}  
     
-    #video2{
-        display: none;
-    }  
+#return{
+    font-size: 12px;
+    margin-top: -20px;
+    margin-left: 0px;
+}
     
-    
-     #return{
-        
-    
-        font-size: 12px;
-        margin-top: -20px;
-        margin-left: 0px;
-         
-    }
-    
-    #return2{
-         font-family: "Verdana", sans-serif;
-        display: none;
-        font-size: 12px;
-        margin-top: -20px;
-        margin-left: 0px;
-         padding-top: 10px;
-         
-    }
+#return2{
+    font-family: "Verdana", sans-serif;
+    display: none;
+    font-size: 12px;
+    margin-top: -20px;
+    margin-left: 0px;
+    padding-top: 10px;
+}
     
 a:link {
     color: black;
@@ -164,6 +128,7 @@ a:hover {
     background-color: transparent;
     text-decoration: none;
 }
+	
 a:active {
     color: black;
     background-color: transparent;
@@ -171,218 +136,163 @@ a:active {
 }
     
 @media all and (max-width: 1250px) {
-        #table2{
-            
-            display: none;
-            
-        }
+
+#table2 {
+    display: none;
+}
         
-        #table3{
-            display: block;
-        }
+#table3{
+    display: block;
+}
+}
    
+@media all and (max-width: 1155px) {
         
-    }
-   
-     @media all and (max-width: 1155px) {
-        
-        .main {
-	margin: 1250 auto;
+.main {
+    margin: 1250 auto;
     margin-bottom: 125px;
-	background-color: #FFFFFF;
-	padding: 0px;
+    background-color: #FFFFFF;
+    padding: 0px;
     font-family: "Verdana", sans-serif;       
 }
         
-          .embed-container { 
-        position: relative;
+.embed-container { 
+    position: relative;
     padding-bottom: 100%;
     padding-top: 35px;
     height: 0;
     overflow: hidden;    
-    } 
+} 
     
-    .embed-container iframe, .embed-container object, .embed-container embed { 
- position: absolute;
+.embed-container iframe, .embed-container object, .embed-container embed { 
+    position: absolute;
     top:0;
     left: 0;
     width: 100%;
     height: 100%;   
-    }
+}
         
-     #table3{
-            display: none;
-        }
+#table3{
+    display: none;
+}
         
-       #table2{
-            display: block;
-            margin-right: 0px;
-              margin-top: 30px;
-            max-width: none;
-            padding-right: 0px;
-        }
+#table2{
+    display: block;
+    margin-right: 0px;
+    margin-top: 30px;
+    max-width: none;
+    padding-right: 0px;
+}
         
+#video1 {
+    display: none;
+}
         
-        #video1{
-            display: none;
-        }
+#video2 {
+    display: block;
+    margin-top: -80px;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+}
         
-        #video2{
-            display: block;
-            
-            margin-top: -80px;
-             max-width: 640px;
-            margin-left: auto;
-            margin-right: auto;
-           
-        }
+#return {
+    display: none;
+}
         
-         #return{
-            display: none;
-        }
-        
-       
-        #return2{
-            display: block;
-            
-            
-           max-width: 877px;
-         
-            margin-right: auto;
-            
-            
-            margin-top: 15px;
-            
-        }
-        
-        
-        
-        
-        
-    }
+#return2 {
+    display: block;
+    max-width: 877px;
+    margin-right: auto;
+    margin-top: 15px;
+ }
+}
     
-   
-   
 </style>
-    
-  
 </head>
 <body vlink="black">
 
- <div class="main">
+<div class="main">
  
 <ul>
     <div id = "Menubar"> 
         <li style="float:left"><a href="/"> HOME </a></li>
-         <li style="float:right"><a href="work"> WORK</a></li>
+        <li style="float:right"><a href="work"> WORK</a></li>
         <li style="float:right"><a href="about">ABOUT</a></li>
     </div>
-    
-
 </ul>
              
-     <div id="video1">
-         
+<div id="video1">
         <div class='embed-container'><iframe src='https://player.vimeo.com/video/148105430' width="640" height="700" frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
-  
-     </div>
+</div>
    
-     
-      <div id="table2">
-        <table border="0" style="width: auto">
+<div id="table2">
+<table border="0" style="width: auto">
                
-            <tr>
+<tr>
     <td>
-      <div id = "Homeheader">
-    <p align="center"> ANIMATED POEM: WHERE THE SIDEWALK ENDS </p>
-    </div>
-           <div id = "homeText">
-		   <p>This animated poem was designed for a final group project for my digital media course. The focus of this assignment was on creating a motion graphic inspired by a poem and an action verb. When we were introduced to this project we were given the poem 'Where the Sidewalk Ends' by Shel Silverstein and the action verb 'creep'. We then had a brainstorming session to come up with ideas on how we could visualize this poem. We came up with the idea of having an ink drop being submerged into a sea of darkness. This idea covers the main theme of the poem, where children live in a joyful and lively world, while adults live in a world full of darkness and depression. The ink drop represents the children and the redness in the ink symbolizes happiness and imagination. The black smoke represents the adults symbolizing our daily grind and struggles. As the darkness creeps into the screen, the overall mood changes from happiness to despair as it shows how our lives are controlled by routine and our sense of creativity is fading away.</p>
-		   <p>My responsibility in this project was to create the ink drop for this film. I first conducted research by watching videos of ink and food dye falling into water to determine various aspects such as the splash and texture. I then designed a storyboard of the potential scenes of our video and had it reviewed by my team members. While designing the ink drop, I decided to add a glare onto the ink to add more of a realistic effect. I created multiple images of the ink falling from various stages in the air factoring in the size, color and shape. I then took these images into Adobe After Effects to animate them into ink falling.</p>
-		   <p>A skill that I used effectively in this project was my team working skills. Throughout every stage of the project, I made sure to regularly communicate with all of my team members. Before team meetings, I would prepare my notes in advance and bring examples of my work to help clearly communicate my ideas to the group. During the designing stage, I would send image designs through our group chat to obtain feedback before going any further. Finally, I was able to finish my section of the project sooner than expected and decided to take that time to help those in my group who were struggling by assisting with the designs and research of their parts.</p>
-	    </div>
-            
-            
-    
+        <div id = "Homeheader">
+            <p align="center"> ANIMATED POEM: WHERE THE SIDEWALK ENDS </p>
+        </div>
+        <div id = "homeText">
+	    <p>This animated poem was designed for a final group project for my digital media course. The focus of this assignment was on creating a motion graphic inspired by a poem and an action verb. When we were introduced to this project we were given the poem 'Where the Sidewalk Ends' by Shel Silverstein and the action verb 'creep'. We then had a brainstorming session to come up with ideas on how we could visualize this poem. We came up with the idea of having an ink drop being submerged into a sea of darkness. This idea covers the main theme of the poem, where children live in a joyful and lively world, while adults live in a world full of darkness and depression. The ink drop represents the children and the redness in the ink symbolizes happiness and imagination. The black smoke represents the adults symbolizing our daily grind and struggles. As the darkness creeps into the screen, the overall mood changes from happiness to despair as it shows how our lives are controlled by routine and our sense of creativity is fading away.</p>
+	    <p>My responsibility in this project was to create the ink drop for this film. I first conducted research by watching videos of ink and food dye falling into water to determine various aspects such as the splash and texture. I then designed a storyboard of the potential scenes of our video and had it reviewed by my team members. While designing the ink drop, I decided to add a glare onto the ink to add more of a realistic effect. I created multiple images of the ink falling from various stages in the air factoring in the size, color and shape. I then took these images into Adobe After Effects to animate them into ink falling.</p>
+	    <p>A skill that I used effectively in this project was my team working skills. Throughout every stage of the project, I made sure to regularly communicate with all of my team members. Before team meetings, I would prepare my notes in advance and bring examples of my work to help clearly communicate my ideas to the group. During the designing stage, I would send image designs through our group chat to obtain feedback before going any further. Finally, I was able to finish my section of the project sooner than expected and decided to take that time to help those in my group who were struggling by assisting with the designs and research of their parts.</p>
+        </div>
     </td>
-         </tr>
-         <tr>
+</tr>
+
+<tr>
     <td>
         <div id = "return">
            <br>
-         <a href="work"> <b> RETURN TO WORK </b></a> 
-     </div>
-        
-      </td>
-  </tr>
-  
-</table>
-         
- </div>
-     
-     
-     <div id="table3">
-        <table border="0" style="width: auto">
-               
-            <tr>
-    <td>
-      <div id = "Homeheader">
-    <p align="center"> ANI-MATED POEM: WHERE THE SIDE-WALK ENDS </p>
-    </div>
-           <div id = "homeText">
-		   <p>This animated poem was designed for a final group project for my digital media course. The focus of this assignment was on creating a motion graphic inspired by a poem and an action verb. When we were introduced to this project we were given the poem 'Where the Sidewalk Ends' by Shel Silverstein and the action verb 'creep'. We then had a brainstorming session to come up with ideas on how we could visualize this poem. We came up with the idea of having an ink drop being submerged into a sea of darkness. This idea covers the main theme of the poem, where children live in a joyful and lively world, while adults live in a world full of darkness and depression. The ink drop represents the children and the redness in the ink symbolizes happiness and imagination. The black smoke represents the adults symbolizing our daily grind and struggles. As the darkness creeps into the screen, the overall mood changes from happiness to despair as it shows how our lives are controlled by routine and our sense of creativity is fading away.</p>
-		   <p>My responsibility in this project was to create the ink drop for this film. I first conducted research by watching videos of ink and food dye falling into water to determine various aspects such as the splash and texture. I then designed a storyboard of the potential scenes of our video and had it reviewed by my team members. While designing the ink drop, I decided to add a glare onto the ink to add more of a realistic effect. I created multiple images of the ink falling from various stages in the air factoring in the size, color and shape. I then took these images into Adobe After Effects to animate them into ink falling.</p>
-		   <p>A skill that I used effectively in this project was my team working skills. Throughout every stage of the project, I made sure to regularly communicate with all of my team members. Before team meetings, I would prepare my notes in advance and bring examples of my work to help clearly communicate my ideas to the group. During the designing stage, I would send image designs through our group chat to obtain feedback before going any further. Finally, I was able to finish my section of the project sooner than expected and decided to take that time to help those in my group who were struggling by assisting with the designs and research of their parts.</p>
-	    </div>
-            
-            
-    
+           <a href="work"> <b> RETURN TO WORK </b></a> 
+        </div>
     </td>
-         </tr>
-         <tr>
+</tr>
+</table>
+</div>
+     
+<div id="table3">
+<table border="0" style="width: auto">
+               
+<tr>
+    <td>
+        <div id = "Homeheader">
+           <p align="center"> ANI-MATED POEM: WHERE THE SIDE-WALK ENDS </p>
+        </div>
+        <div id = "homeText">
+	   <p>This animated poem was designed for a final group project for my digital media course. The focus of this assignment was on creating a motion graphic inspired by a poem and an action verb. When we were introduced to this project we were given the poem 'Where the Sidewalk Ends' by Shel Silverstein and the action verb 'creep'. We then had a brainstorming session to come up with ideas on how we could visualize this poem. We came up with the idea of having an ink drop being submerged into a sea of darkness. This idea covers the main theme of the poem, where children live in a joyful and lively world, while adults live in a world full of darkness and depression. The ink drop represents the children and the redness in the ink symbolizes happiness and imagination. The black smoke represents the adults symbolizing our daily grind and struggles. As the darkness creeps into the screen, the overall mood changes from happiness to despair as it shows how our lives are controlled by routine and our sense of creativity is fading away.</p>
+	   <p>My responsibility in this project was to create the ink drop for this film. I first conducted research by watching videos of ink and food dye falling into water to determine various aspects such as the splash and texture. I then designed a storyboard of the potential scenes of our video and had it reviewed by my team members. While designing the ink drop, I decided to add a glare onto the ink to add more of a realistic effect. I created multiple images of the ink falling from various stages in the air factoring in the size, color and shape. I then took these images into Adobe After Effects to animate them into ink falling.</p>
+	   <p>A skill that I used effectively in this project was my team working skills. Throughout every stage of the project, I made sure to regularly communicate with all of my team members. Before team meetings, I would prepare my notes in advance and bring examples of my work to help clearly communicate my ideas to the group. During the designing stage, I would send image designs through our group chat to obtain feedback before going any further. Finally, I was able to finish my section of the project sooner than expected and decided to take that time to help those in my group who were struggling by assisting with the designs and research of their parts.</p>
+	</div>
+    </td>
+</tr>
+
+<tr>
     <td>
         <div id = "return">
            <br>
-         <a href="work"> <b> RETURN TO WORK </b></a> 
-     </div>
-        
-      </td>
-  </tr>
-  
+           <a href="work"> <b> RETURN TO WORK </b></a> 
+        </div>
+    </td>
+</tr>
 </table>
-         
- </div>
+</div>
      
-     
-      <div id="video2">
-         
+<div id="video2">
         <div class='embed-container'><iframe src='https://player.vimeo.com/video/148105430' width="640" height="650" frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
-  
-     </div>
+</div>
    
-          
-     <div id="return2">
-          <table border="0" style="width: auto">
-               
-            <tr>
+<div id="return2">
+        <table border="0" style="width: auto">
+<tr>
     <td>
         <a href="work"> <b> RETURN TO WORK </b></a>
-                </td>
-              </tr>
-          </table>
-     </div>
-       
-     
-   
-     
-        
-     
-  
-     
-
-
-
-             
+    </td>
+</tr>
+</table>
+</div>
 </div>
 </body>
 </html>
