@@ -277,8 +277,6 @@ a:active {
 
 <script type="application/processing">
          
-// Ryan Merkley  r2merkle
-
 float [] XposButton = new float [2]; // x position of menu button
 float [] YposButton = new float [2]; // y position of menu button
 float [] XposMButton = new float [1]; // x position of return button
@@ -289,7 +287,7 @@ boolean Buttons1 = true; // turns menu buttons on or off
 boolean Buttons2 = true; // turns return button on or off
 PImage sadFace;
 PImage happyFace; 
-int lives = 3; // (USES BEST USE OF "GLOBAL VARIABLES") lives for turtle
+int lives = 3; // lives for turtle
 int counter = 0; // score of the game
 int minRandom = 100; // minimum value for object sizes
 int maxRandom = 150; // maximum value for object sizes
@@ -316,7 +314,6 @@ void setup() {
 void starter() {
   TurtleChar = new turtle(TurtleStartingXpos, TurtleStartingYpos); // starting position of turtle
 
-  // (USES BEST USE OF "USER DEFINED OBJECTS")
   // sets all starting positions, speeds, and random sizes for logs
   Logs[0] = new Log(25, 55, 3, random(minRandom, maxRandom));
   Logs[1] = new Log(300, 55, 3, random(minRandom, maxRandom));
@@ -433,7 +430,6 @@ void draw() {
     textSize(20);
     text("Press the spacebar to play again.", 90, height / 2 + 20);
 
-    // (USES BEST USE OF "LOAD AND DISPLAY IMAGES")
     image(happyFace, 125, 10, 250, 250); // happy face image
 
     // resets the turtles position
@@ -443,7 +439,6 @@ void draw() {
 }
 
 void keyPressed() {
-  // (USES BEST USE OF "EVENT FUNCTIONS")
   // moves turtle in different directions only if the game if running,
   // score isn't max level, and turtle has lives left
   if (selected == 0 && counter < 5 && lives > 0 && key == 'd') {
@@ -491,7 +486,6 @@ void mousePressed() {
     menuselected = -1;
   }
 
-  // (USES BEST USE OF "LOOPS")
   // enables how to play menu when menu button is pressed
   if (Buttons1 == true) {
     for (int i = 0; i < 2; i++) {
@@ -601,7 +595,7 @@ void HowToPlay() {
   text("will have to start over from the beginning.", 10, 400);
 }
 
-// (USES BEST USE OF FUNCTIONS) creates a turtle, sets its starting positions, and its ability to move
+// creates a turtle, sets its starting positions, and its ability to move
 class turtle { 
   // turtle properties
   float TurtleX; // x coordinates
@@ -681,7 +675,6 @@ class Car {
       hue = random(0, 255); // randomizes color of the car
     }
 
-    // (USES BEST USE OF CONDITIONALS)
     // checks to see if car intersects with the turtle. takes in the 
     // turtles and cars x and y coordinates, width and height of car
     if (hitTest(TurtleChar.TurtleX, TurtleChar.TurtleY, x, y, 60, 40)) {
@@ -724,7 +717,7 @@ class Van {
   float hue; // color
   float speed; // speed
 
-  //constructor that initializes the vans properties. It takes in a x and y coordinate, color, and speed
+  // constructor that initializes the vans properties. It takes in a x and y coordinate, color, and speed
   Van(float xIn, float yIn, float speedIn, float hueIn) {
     x = xIn;
     y = yIn;
@@ -796,7 +789,6 @@ void GameBackground() {
   rect(0, 50, width, 195);  // lake
 }
 
-// (USES BEST USE OF "RECTANGLE HIT TEST")
 // calculates the distance from one object to another. takes in the first and second 
 // objects x and y coordinates, and the width and height of the second object
 boolean hitTest(float x, float y, float rx, float ry, float rw, float rh) {
