@@ -139,8 +139,8 @@ img{
       
  .RyanPic{
     min-height: 10px;         
-    max-width: 750px;
     margin-left: auto;
+    margin-right: auto;
     margin-top: 80px;
 }
 }
@@ -165,28 +165,8 @@ img{
      
 <div class="RyanPic" style="width:auto">
  <img class="mySlides" src="Ryan_photo.jpg" style="width:auto">
- <img class="mySlides" src="Ryan_2.jpg" style="width:auto">
- <img class="mySlides" src="Ryan_3.jpg" style="width:auto">
 </div>
-     
-<script>
-var slideIndex = 0;
-carousel();
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > x.length) {slideIndex = 1}    
-    x[slideIndex-1].style.display = "block";  
-    setTimeout(carousel, 5000); // Change image every 2 seconds
-}
-         
-</script>
-    
+        
 <table border="0" style="width: auto">
 <tr>
     <td>
