@@ -14,7 +14,7 @@
 .main {
     margin: 0 auto;
     max-width: 1250px;
-    margin-bottom: 275px;
+    margin-bottom: 340px;
     background-color: #FFFFFF;
     padding: 75px;
     font-family: "Verdana", sans-serif;
@@ -50,7 +50,19 @@ li a {
 li a:hover:not(.active) {
    color: black;
 }
+
+.Mail:hover {
+  opacity: 0.6;
+}
     
+.LinkedIn:hover {
+  opacity: 0.6;
+}
+
+.Phone:hover {
+  opacity: 0.6;
+}
+
 #Menubar{
    font-size: 12px;
 }
@@ -60,6 +72,12 @@ li a:hover:not(.active) {
     margin-left: auto;
     margin-top: 80px;
     min-height: 605px;
+}
+ 
+.Contact{
+    max-width: 270px;
+    margin-left: auto;
+    margin-top: -90px;        
 }
   
 #RyanLogo{
@@ -112,7 +130,7 @@ li a:hover:not(.active) {
 table {
     padding-right: 425px;
     margin-left: 0px;
-    margin-top: -634px;
+    margin-top: -586px;
  }
     
 @media all and (max-width: 750px) {
@@ -143,6 +161,29 @@ img{
     margin-right: auto;
     margin-top: 80px;
 }
+  
+.Contact{
+    max-width: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;        
+}
+}
+
+@media all and (max-width: 400px) {
+    
+li a {
+     display: block;
+    color: #666;
+    text-align: center;
+    margin-top: 18px;
+    padding: 14px 7px;
+    text-decoration: none;
+}
+    
+#Menubar{
+   font-size: 11px;
+}
 }
     
 </style>
@@ -153,6 +194,7 @@ img{
  
 <ul>
     <div id = "Menubar"> 
+        <li style="float:right"><a href="contact">CONTACT</a></li>
         <li style="float:right"><a href="work">WORK</a></li>
         <li style="float:right"><a href="about">ABOUT</a></li>
         <li style="float:right"><a href="/">HOME</a></li>
@@ -166,20 +208,25 @@ img{
 <div class="RyanPic" style="width:auto">
  <img class="mySlides" src="Ryan_photo.jpg" style="width:auto">
 </div>
+  
+<div class="Contact" style="width:auto">
+    <a href="mailto:ryandmerkley@gmail.com"><img class="Mail" src="Mail.png" style="width:40px"></a>
+    <a href="tel:2262208170"><img class="Phone" src="Phone.png" style="width:40px"></a>
+    <a href="https://ca.linkedin.com/in/rdmerkley" target="_blank"><img class="LinkedIn" src="LinkedIn.png" style="width:40px"></a>
+</div>
         
 <table border="0" style="width: auto">
 <tr>
     <td>
         <div id = "homeText">
-            <div id="Homeheader">
+         <div id="Homeheader">
             <p>ABOUT</p>
+         </div>        
+            <p>My name is Ryan Merkley and I'm currently an undergraduate student at the University of Waterloo, enrolled in the Global Business and Digital Arts program.</p>
+            <p>Being apart of GBDA has given me the opportunity to acquire 4 years of design experience and marketing strategies. This includes areas such as storyboarding, prototyping, sales and advertising. I have also gained 4 years of Graphic Design experience using Adobe Creative Suite software. These experiences have piqued my interest for a career in design and/or marketing.</p>
+            <p>As a dedicated and motivated professional, I consistently make strides to enhance the quality of my work by broadening my skillset and discovering new areas to grow. Every project in this portfolio whether it be independent, or collaborative has allowed me to grow and understand how to be successful in the real world.</p>
+            <p>You can check out some of my previous projects that I have created on this site.</p>
          </div>
-            
-<p>Hello and welcome to my ePortfolio page. My name is Ryan Merkley and I'm currently an undergraduate student at the University of Waterloo, enrolled in the Global Business and Digital Arts program.</p>
-<p>Over the past couple of years, I've had experience with coding, and visual design through programs such as Adobe Illustrator and Photoshop for school projects as well as for a 3 story micro tiles wall.</p>
-<p>During my free time, I enjoy playing video games as well I like to volunteer for different community events around my local area. Volunteerism is an important aspect in my life, as it gives me the opportunity to give back to my community as well as participate in events that help change the quality of life for many individuals.</p>
-<p>I am a very dedicated and responsible person when it comes to my work. I enjoy challenging myself and learning new skills and strategies that can help improve the quality of my work.</p> 
-    </div>
     </td>
 </tr>
 <tr>
