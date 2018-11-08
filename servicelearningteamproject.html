@@ -14,7 +14,7 @@
 .main {
     margin: 0 auto;
     max-width: 1250px;
-    margin-bottom: 450px;
+    margin-bottom: 100px;
     background-color: #FFFFFF;
     padding: 75px;
     font-family: "Verdana", sans-serif;
@@ -36,11 +36,9 @@ ul {
     overflow: hidden;
     background-color: #f3f3f3;
 }
-
 li {
     float: left;
 }
-
 li a {
     display: block;
     color: #666;
@@ -49,7 +47,7 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 }
-
+    
 li a:hover:not(.active) {
    color: black;
 }
@@ -75,9 +73,10 @@ li a:hover:not(.active) {
     
 #Homeheader{
     line-height: 150%;
-    font-size: 25px;  
+    font-family: "Verdana", sans-serif;
+    font-size: 25px; 
 }
-
+    
 #homeText{
     font-size: 12px;   
 }
@@ -102,7 +101,6 @@ a:link {
     background-color: transparent;
     text-decoration: none;
 }
-
 a:hover {
     color: black;
     background-color: transparent;
@@ -114,37 +112,53 @@ a:active {
     background-color: transparent;
     text-decoration: none;
 }
-    
-#Pic1{
-    padding-bottom: 20px;
+   
+ #Pic1{
+    padding-bottom: 10px;
     min-width: 875px;
     min-height: 675px;
 }
     
 #Pic2{
+    margin-top: 30px;
+    
     min-width: 400px;
     min-height: 622px;
+  
 }
     
 #Pic3{
-   margin-left: 35px;
+    margin-top: 30px;
+   margin-left: 50px;
    min-width: 400px;
    min-height: 622px;
 }
-    
+
+#Pic4 {
+   margin-top: 40px;
+   min-width: 400px;
+   min-height: 622px;     
+        
+}
+
+#Pic5 {
+    margin-top: 40px;
+   margin-left: 50px;
+   min-width: 400px;
+   min-height: 622px;     
+        
+}
 #table1, #table1 th, #table1 td  {
    font-family: "Verdana", sans-serif;
    font-size: 12px;
    text-align: center;
-   padding: 10px;
-   border-spacing: 15px;
-   padding-bottom: 15px;
+  
 }
     
 #table1{
    max-width: 880px;
    margin-left: auto;
-   margin-top: 68px;
+   margin-top: 77px;
 }
     
 #table2, #table2 th, #table2 td  {
@@ -156,7 +170,7 @@ a:active {
 #table2{
    padding-right: 900px;
    margin-left: 0px;
-   margin-top: -1411px;
+   margin-top: -2046px;
 }
     
 #table4, #table4 th, #table4 td  {
@@ -179,19 +193,8 @@ a:active {
 #table5{
    display: none;
 }
-    
-@media all and (max-width: 1250px) {
-
-#table2{
-   display: none;
-}
         
-#table4{
-   display: block;
-}
-}
-    
-@media all and (max-width: 1155px) {
+@media all and (max-width: 1240px) {
     
 .main {
     margin: 1250 auto;
@@ -288,49 +291,81 @@ img{
     margin-top: 0px;
 }
 }
+
+@media all and (max-width: 400px) {
+    
+li a {
+     display: block;
+    color: #666;
+    text-align: center;
+    margin-top: 18px;
+    padding: 14px 7px;
+    text-decoration: none;
+}
+    
+#Menubar{
+   font-size: 11px;
+}
+}
      
 </style>
 </head>
-<body vlink="black">
+<body>
 
 <div class="main">
  
 <ul>
     <div id = "Menubar"> 
-        <li style="float:right"><a href="work">WORK</a></li>
-        <li style="float:right"><a href="about">ABOUT</a></li>
-        <li style="float:right"><a href="/">HOME</a></li>
+        <li style="float:right"><a href="contact">Contact</a></li>
+        <li style="float:right"><a href="work">Work</a></li>
+        <li style="float:right"><a href="about">About</a></li>
+        <li style="float:right"><a href="/">Home</a></li>
         
         <div id = "RyanLogo">
         <a href="/"><img src = "RM.png" alt="RM Logo" width="75"/></a> 
         </div>
     </div>
 </ul>
-      
-<div id = "table1">    
+     
+    <div id = "table1">    
 <table border="0" style="width: auto" >
   <tr>
       <td colspan="2">
-         <div id="Pic1">
-            <img src = "ARBUS300_Service_Learning.jpg" alt="Service Learning team photo"/>
-         </div>
+      <div id = "Pic1">
+            <img src = "Team_photo.jpg" alt="Team photo"/>
+          </div>
       </td> 
   </tr>
          
   <tr>
       <td>
-          <div id="Pic2">
-             <img src = "ARBUS300_photo_left.jpg" alt="Group member wearing boar T-shirt"/>
+          <div id = "Pic2">
+             <img src = "T-shirts.jpg" alt="Group members wearing T-shirt"/>
           </div>
       </td>
       <td>
-          <div id="Pic3">
-             <img src = "ARBUS300_photo_right.jpg" alt="Group member wearing arts T-shirt"/>
+          <div id = "Pic3">
+             <img src = "T-shirts_2.jpg" alt="Group members wearing T-shirt"/>
+          </div>
+      </td>
+      
+      </tr>
+      <tr>
+      <td>
+          <div id = "Pic4">
+             <img src = "Facebook_2.jpg" alt="Group members wearing T-shirt"/>
+          </div>
+      </td>
+          
+      <td>
+       <div id = "Pic5">
+             <img src = "Facebook_1.jpg" alt="Group members wearing T-shirt"/>
           </div>
       </td>
   </tr>
 </table>
 </div>
+
      
 <div id="table2">
 <table border="0" style="width: auto">
@@ -338,42 +373,33 @@ img{
 <tr>
     <td>
         <div id = "Homeheader">
-           <p align="center"> SERVICE LEARNING TEAM PROJECT </p>
+           <p align="center"> Service Learning Team Project </p>         
+            
         </div>
            
         <div id = "homeText">
-	   <p>This project was a team assignment for my arts and business course. The objective of this project was to create a new product, design that product, and successfully market it. Our group decided to team up with the arts student union at our school to market our product. The reason we chose them is because we saw that they had more potential in reaching out to more students and didn't currently have arts related apparel to be purchased. Our objective was to design a T-shirt to fulfill the gap of students wanting to purchase arts related clothing. We began this project by promoting the arts student union through multiple events around our school. These events allowed us to obtain more support for ASU from various faculties. We then designed T-shirt logos and submitted them off to the ASU council to determine the best designs. Upon receiving the results, we then ordered all the necessary shirts and began marketing them through flyers and social media. We had a day focused on selling our merchandise and it turned out to be a success as by the end of the day we had sold out all our T-shirts.</p>
-	   <p>I was responsible for the promotional elements for both the T-shirts and the Arts Student Union. I began promoting events through the ASU Facebook page. I created calendar events and posted photos from previous events to inform all students of the event. I attended each event in person so that I could promote the union with various students. Once these events were complete, I decided to create a survey to obtain feedback from those who attended. I learned that many students found the events boring and not informative, so I initiated an incentive program where if students liked the ASU Facebook page and attended the event they would earn a prize. These promotional efforts were helpful as it increased attendance for our final sales event.</p>
-	   <p>I believe that I was able to use my communication skills to successful advertise our T-shirts. I communicated with the ASU council through emails to discuss and approve our event plans. I confidently presented my teams ideas showing potential designs and promotional samples. During the events, I interacted with students in a respectful manner and listened from feedback to improve upon the events making them more exciting and enjoyable.</p>
+	   
+            <p><b>Roles:</b> Marketer, project manager</p>  
+            <p><b>Summary:</b> A team of students and I designed and marketed two T-shirts for the University of Waterloo’s Arts Student Union to get students from varying faculties more engaged with the arts faculty. </p>
+            <p><b>Tools Used:</b> Facebook, Canon 70D, Adobe Photoshop, Survey Monkey, Google Drive (Docs and Sheets)</p>
+            <p><b>Created by:</b> Ryan Merkley, Daihan Zhu, Minku Han, Angela Le, Vivian Vo and Jessica Chandrathasan</p>
+            _____
+            <br>
+            <br>
+            <p><font size="4">The Challenge</font></p>
+            <p>The challenge that was presented to my team was to create any new product, design it, and then successfully market it. After in-depth research, our group decided to team up with the Arts Student Union at our university to design and market T-shirts. The reasoning for this was because we saw that the ASU had potential in reaching out to more students and didn't currently have arts related apparel to be purchased.</p>
+            
+            <p><font size="4">The Process</font></p>
+            <p>Our objective was to design two T-shirts to promote the ASU as well as fulfill the gap of students wanting to purchase arts related clothing. We began this project by promoting the ASU through multiple events around our university. These events allowed us to obtain more support for the ASU from various faculties and enlarge our reach of students. We then designed multiple T-shirt logos and submitted them off to the ASU council for them to determine the best designs. Upon receiving their approval, we then ordered an initial inventory of 200 shirts and began marketing our sales event through university flyers, social media and face-to-face conversations. Our sales event was scheduled for a single day and was focused on selling our merchandise. During the event, it seemed that our promotional efforts turned out to be a success as there was a large turnout from both students and faculty members. By the end of the event, we had sold out all our T-shirts and had broken-even.</p>
+            
+            <p><font size="4">My Contributions</font></p>
+            <p>I was responsible for the promotional elements for both the T-shirts and the Arts Student Union. I began promoting events through the ASU Facebook page. I created calendar events and posted photos and promotional content to inform all students of our sales event. I also went to my university’s campus and promoted our event to students in person. I attended various ASU events before our major sales event as a way to promote the union as well as gather interest from students in different faculties. Once these events were complete, I decided to create a survey to obtain feedback from those who attended. I learned that many students found the events boring and not informative, so I initiated an incentive program where if students liked the ASU Facebook page and attended future events, they would earn a prize. These promotional efforts were helpful as it increased attendance for our final sales event.</p>
+            
+            <p><font size="4">Skills Learned</font></p>
+            <p>I believe that I improved upon my communication skills through the course of this project. I communicated with the ASU council through emails to discuss and approve our event plans. I confidently presented my teams ideas showing potential designs and promotional samples. During the events, I interacted with students in a respectful manner when advertising our T-shirts as well as actively listened to feedback to improve future events. Finally, as the project manager, I made sure that all team members were satisfied with their roles. I scheduled weekly meetings so that we could talk about our progress and discuss future tasks to ensure successful completion of the project.</p>
+                        
+            
 	</div>
-    </td>
-</tr>
-
-<tr>
-    <td>
-        <div id = "return">
-           <br>
-           <a href="work"><b>RETURN TO WORK</b></a> 
-        </div>
-    </td>
-</tr>
-</table>
-</div>
-    
-<div id="table4">
-<table border="0" style="width: auto">
-               
-<tr>
-    <td>
-        <div id = "Homeheader">
-           <p align="center"> SER-VICE LEAR-NING TEAM PRO-JECT </p>
-        </div>
-           
-        <div id = "homeText">
-	   <p>This project was a team assignment for my arts and business course. The objective of this project was to create a new product, design that product, and successfully market it. Our group decided to team up with the arts student union at our school to market our product. The reason we chose them is because we saw that they had more potential in reaching out to more students and didn't currently have arts related apparel to be purchased. Our objective was to design a T-shirt to fulfill the gap of students wanting to purchase arts related clothing. We began this project by promoting the arts student union through multiple events around our school. These events allowed us to obtain more support for ASU from various faculties. We then designed T-shirt logos and submitted them off to the ASU council to determine the best designs. Upon receiving the results, we then ordered all the necessary shirts and began marketing them through flyers and social media. We had a day focused on selling our merchandise and it turned out to be a success as by the end of the day we had sold out all our T-shirts.</p>
-	   <p>I was responsible for the promotional elements for both the T-shirts and the Arts Student Union. I began promoting events through the ASU Facebook page. I created calendar events and posted photos from previous events to inform all students of the event. I attended each event in person so that I could promote the union with various students. Once these events were complete, I decided to create a survey to obtain feedback from those who attended. I learned that many students found the events boring and not informative, so I initiated an incentive program where if students liked the ASU Facebook page and attended the event they would earn a prize. These promotional efforts were helpful as it increased attendance for our final sales event.</p>
-	   <p>I believe that I was able to use my communication skills to successful advertise our T-shirts. I communicated with the ASU council through emails to discuss and approve our event plans. I confidently presented my teams ideas showing potential designs and promotional samples. During the events, I interacted with students in a respectful manner and listened from feedback to improve upon the events making them more exciting and enjoyable.</p>
-	</div>  
     </td>
 </tr>
 
@@ -393,18 +419,32 @@ img{
 
 <tr>
     <td colspan="2">
-       <img src = "ARBUS300_Service_Learning.jpg" alt="Service Learning team photo"/>
+      <img src = "Team_photo.jpg" alt="Team photo"/>
     </td> 
 </tr>
          
 <tr>
     <td>
-        <img src = "ARBUS300_photo_left.jpg" alt="Group member wearing boar T-shirt"/>
+       <img src = "T-shirts.jpg" alt="Group members wearing T-shirt"/>
     </td>
     <td>
-        <img src = "ARBUS300_photo_right.jpg" alt="Group member wearing arts T-shirt"/>
+       <img src = "T-shirts_2.jpg" alt="Group members wearing T-shirt"/>
     </td>
 </tr>
+
+    <tr>
+      <td>
+          
+             <img src = "Facebook_2.jpg" alt="Group members wearing T-shirt"/>
+      
+      </td>
+          
+      <td>
+        
+             <img src = "Facebook_1.jpg" alt="Group members wearing T-shirt"/>
+        
+      </td>
+  </tr>
 </table>
 </div>
        
@@ -413,21 +453,35 @@ img{
 
 <tr>
     <td colspan="1">
-       <img src = "ARBUS300_Service_Learning.jpg" alt="Service Learning team photo"/>
+    <img src = "Team_photo.jpg" alt="Team photo"/>
     </td> 
 </tr>
          
 <tr>
     <td>
-        <img src = "ARBUS300_photo_left.jpg" alt="Group member wearing boar T-shirt"/>
+        <img src = "T-shirts.jpg" alt="Group members wearing T-shirt"/>
     </td>
 </tr>
 
 <tr>
     <td>
-        <img src = "ARBUS300_photo_right.jpg" alt="Group member wearing arts T-shirt"/>
+        <img src = "T-shirts_2.jpg" alt="Group members wearing T-shirt"/>
     </td>
 </tr>
+<tr>
+      <td>
+          
+             <img src = "Facebook_2.jpg" alt="Group members wearing T-shirt"/>
+      
+      </td>
+    </tr>
+    <tr>
+         <td>
+        
+             <img src = "Facebook_1.jpg" alt="Group members wearing T-shirt"/>
+        
+      </td>
+  </tr>
 </table>
 </div>
        
