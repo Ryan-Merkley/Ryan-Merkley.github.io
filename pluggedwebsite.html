@@ -14,7 +14,7 @@
 .main {
     margin: 0 auto;
     max-width: 1250px;
-    margin-bottom: 780px;
+    margin-bottom: 230px;
     background-color: #FFFFFF;
     padding: 75px;
     font-family: "Verdana", sans-serif;
@@ -34,11 +34,9 @@ ul {
     overflow: hidden;
     background-color: #f3f3f3;
 }
-
 li {
     float: left;
 }
-
 li a {
     display: block;
     color: #666;
@@ -47,7 +45,6 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 }
-
 li a:hover:not(.active) {
    color: black;
 }
@@ -78,7 +75,7 @@ li a:hover:not(.active) {
    margin-right: 920px;
    margin-left: 0px;
 }
-	
+    
 #RyanLogo{
    max-width: 75px;
    margin-top: 2px;
@@ -88,11 +85,32 @@ li a:hover:not(.active) {
     
 #Homeheader{
    line-height: 150%;
+   font-family: "Verdana", sans-serif;
    font-size: 25px;  
 }
-
 #homeText{
    font-size: 12px;   
+}
+    
+.button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-left: 0px;
+}
+    
+.button:hover {background-color: #5F5F5F}
+    table, th, td {
+    line-height: 160%;
+    font-family: "Verdana", sans-serif;
+    font-size: 14px;
 }
     
 a:link {
@@ -100,7 +118,6 @@ a:link {
     background-color: transparent;
     text-decoration: none;
 }
-
 a:hover {
     color: black;
     background-color: transparent;
@@ -112,15 +129,50 @@ a:active {
     background-color: transparent;
     text-decoration: none;
 }
+   
+#logo1{
+   max-width: 385px;
+      min-width: 5px;
+    min-height: 32px;
+    margin-left: 0px;
+    margin-top: 15px;
+}
+
+#Logo2{
+    max-width: 385px;
+      min-width: 375px;
+    margin-left: -366px;
+    min-height: 32px; 
+        margin-top: 15px;
+}
+
+#brainstorm{
+   max-width: 385px;
+      min-width: 5px;
+    min-height: 32px;
+    margin-left: 0px;
+    margin-top: 15px;
+}
+
+#roughwork{
+    max-width: 385px;
+      min-width: 385px;
+    margin-left: -366px;
+    min-height: 32px; 
+    margin-top: 15px;
+}
     
 #Pic1{
-    min-width: 875px;
+    
     min-height: 532px;
+    max-width: 796px;
+    
 }
     
 #Pic2{
-    min-width: 875px;
+    margin-top: -25px;
     min-height: 525px;
+    max-width: 796px;
 }
      
 #Pic3{
@@ -141,7 +193,7 @@ a:active {
 #table1{
     max-width: 880px;
     margin-left: auto;
-    margin-top: 68px;
+    margin-top: 58px;
 }
     
 #table2, #table2 th, #table2 td  {
@@ -153,7 +205,7 @@ a:active {
 #table2{
     padding-right: 900px;
     margin-left: 0px;
-    margin-top: -1764px;
+    margin-top: -2131px;
 }
     
 #table4, #table4 th, #table4 td  {
@@ -176,19 +228,8 @@ a:active {
 #table5{
     display: none;
 }
-   
-@media all and (max-width: 1260px) {
-
-#table2{
-    display: none;
-}
-        
-#table4{
-    display: block;
-}
-}
-    
-@media all and (max-width: 1160px) {
+      
+@media all and (max-width: 1250px) {
     
 .main {
     margin: 1250 auto;
@@ -214,6 +255,9 @@ img{
     font-size: 12px;
     text-align: center;
     padding-bottom: 20px;
+    padding: 10px;
+   
+    
 }
          
 #table3{
@@ -222,6 +266,7 @@ img{
     display: block;
     margin-left: auto;
     margin-top: 0px;
+    
 }
          
 #table2, #table2 th, #table2 td  {
@@ -233,9 +278,10 @@ img{
 #table2{
     display: block;
     margin-right: 0px;
-    margin-top: 30px;
+    margin-top: 41px;
     max-width: none;
     padding-right: 0px;
+    padding-bottom: 0px;
 }
        
 #return{
@@ -246,11 +292,53 @@ img{
     display: block;
     max-width: 877px;
     margin-right: auto;
-    margin-top: -40px;
+    margin-top: -10px;   
 }
          
 #table4{
     display: none;
+}
+}
+    
+@media all and (max-width: 500px) {
+        
+#table3{
+    display: none;
+}
+        
+#table5, #table5 th, #table5 td  {
+    font-family: "Verdana", sans-serif;
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+    border-spacing: 5px;
+    margin-left: -10px;
+    margin-top: 50px;
+}
+         
+#table5{
+    display: block;
+    margin: 0 auto;
+    max-width: 865px;
+    display: block;
+    margin-left: auto;
+    margin-top: 0px;
+}
+}
+    
+@media all and (max-width: 400px) {
+    
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    margin-top: 18px;
+    padding: 14px 10px;
+    text-decoration: none;
+}
+    
+#Menubar{
+   font-size: 11px;
 }
 }
      
@@ -262,9 +350,10 @@ img{
  
 <ul>
     <div id = "Menubar"> 
-       <li style="float:right"><a href="work">WORK</a></li>
-        <li style="float:right"><a href="about">ABOUT</a></li>
-        <li style="float:right"><a href="/">HOME</a></li>
+        <li style="float:right"><a href="contact">Contact</a></li>
+        <li style="float:right"><a href="work">Work</a></li>
+        <li style="float:right"><a href="about">About</a></li>
+        <li style="float:right"><a href="/">Home</a></li>
         
         <div id = "RyanLogo">
         <a href="/"><img src = "RM.png" alt="RM Logo" width="75"/></a> 
@@ -274,7 +363,8 @@ img{
      
 <div id = "table1">    
 <table border="0" style="width: auto" >
-<tr>
+
+    <tr>
     <td colspan="1">
        <div id="Pic1">
           <a href="https://xd.adobe.com/view/87fd9c10-c1bb-49b8-b82f-79e1e5b9590f/" target ="_blank"> <img src = "Plugged_Website_Homepage.jpg"alt="Plugged website homepage"/> </a> 
@@ -285,23 +375,34 @@ img{
 <tr>
     <td>
         <div id="Pic2">
-           <img src = "Plugged_Sign-In.jpg" alt="Plugged website login screen"/>
+           <img src = "Plugged_Website_Discover.jpg" alt="Plugged website discover page"/>
         </div>
     </td>
 </tr>
 
-<tr>
+    <tr>
     <td>
-        <div id="Pic3">
-           <img src = "Plugged_Website_Venue.jpg"alt="Plugged website artist page"/>
+       <div id="logo1">   
+           <img src = "plugged-full-logo.png"alt="Plugged full logo"/>
+       </div>
+    </td> 
+    <td>
+        <div id="Logo2">
+          <img src = "final-logo-white.png"alt="Plugged white logo"/>
         </div>
     </td>
-</tr>
-         
-<tr>
-    <td colspan="1">
-       <p> Check out our website here: <a href="https://xd.adobe.com/view/87fd9c10-c1bb-49b8-b82f-79e1e5b9590f/" target ="_blank">https://xd.adobe.com/view/87fd9c10-c1bb-49b8-b82f-79e1e5b9590f/</a></p>
+    <tr>
+    <td>
+       <div id="brainstorm">
+          <img src = "brainstorming.jpg"alt="Brainstorming whiteboard"/>
+    </div>
+    </td> 
+    <td>
+       <div id="roughwork">
+          <img src = "logo-website-iterations.jpg"alt="Logo & website iterations"/> 
+       </div>
     </td>
+	    
 </tr>
 </table>
 </div>
@@ -312,13 +413,33 @@ img{
 <tr>
     <td>
         <div id = "Homeheader">
-           <p align="center"> WEBSITE BRAND DEVELOPMENT: PLUGGED </p>
+           <p align="center"> Website Brand Development: Plugged </p>
         </div>
            
         <div id = "homeText">
-	   <p>Plugged is a prototype website that was a group project made for my digital imaging course. We were required to design a website that would help develop a brand for a business. For this project, we were assigned to a business called Plugged. Plugged is the intermediary between venues, artists, and audiences. They initiate communications between the involved parties, create a community with common interests and promote new music. Our main challenge when creating this website was being able to connect Plugged's three primary customer groups; the artist, the audience, and the venue. We wanted the pages for each customer group to be unique, while still maintaining connection with one another. An artist would be able to benefit from using Plugged as it would enable them to collaborate with other musicians and various venues. Audiences can discover new music, artists and new venues to visit, and venues can use Plugged to grow their business by seamlessly connecting with artists who are looking to perform.</p>
-	   <p>For this project, I contributed to the design of the Discover page and the company logo. For my design of the logo, I first conducted research about our client’s main goals and used this information to design the logo. I wanted the logo to connect to their target market and therefore created it featuring their three customer groups. The logo is composed of a location pin for the venue, a record for the artist, and headphones for the audience. Once we had finished the designs for the logo, I then created a mock-up design of the Discover page to present to our client. When creating the final design, I incorporated a search menu on top of the mapping display to allow users to search for events and click on them to learn more about that venue.</p>
-	   <p>A skill that I used effectively in this project was my leadership skills. Throughout the stages of our designs, I initiated meetings for both our team to discuss project ideas as well as with our client to broadcast our designs. I frequently communicated with our client through emails to keep them up to date with our work. I also made sure that everyone in our group had a part to work on for the project and regularly checked up on each member to make sure that they weren’t struggling and if they needed any assistance with their work.</p>
+	    <p><b>Roles:</b> Designer, Project&nbsp;Manager</p>  
+            <p><b>Summary:</b> A group of students and I designed a prototype website for an intermediary music business called Plugged who institute connections between venues, artists, and&nbsp;audiences.</p>
+            <p><b>Tools Used:</b> Adobe Illustrator, Adobe Photoshop, Adobe XD, Google Drive (Docs and Sheets), Balsamiq&nbsp;Mockups</p>
+            <p><b>Created by:</b> Ryan Merkley, Adrien Vilcini, Wyatt Kay, Yavuz Temeltas, James Colalillo, Alek&nbsp;Policicchio</p>
+            <p></p>
+            <br>
+            <a href="https://xd.adobe.com/view/87fd9c10-c1bb-49b8-b82f-79e1e5b9590f/" class="button" target ="_blank">Prototype</a>
+            <p></p>
+            _____
+            <br>
+            <br>
+            <p><font size="4">The Challenge</font></p>
+            <p>The challenge that my team was required to do was to design a website that would help develop a brand for a business. For this project, we were assigned to a business called Plugged. Plugged is the intermediary between venues, artists, and audiences. They initiate communications between the involved parties, create a community with common interests and promote new&nbsp;music.</p>
+            
+            <p><font size="4">The Process</font></p>
+            <p>Our objective when creating this website was trying to connect Plugged's three primary customer groups; the artist, the audience, and the venue. We wanted the pages for each customer group to be unique, while still maintaining connections with one another. We began this project by conducting brainstorming sessions to determine how might we make this connection possible. During these sessions we would go over possible designs and layouts as well as individual research from each team member. These discussions led to the first iteration of our&nbsp;prototype.</p>
+            <p>We then ran into a major problem of our client disliking all our designs. Once we had presented our pitch, our client immediately let us know about their displeasure and how our designs didn’t accurately reflect their company. We didn’t let this feedback discourage us and instead we acknowledged our client’s disappointment and went back into brainstorming to determine what went wrong. After critically analyzing our designs, we noticed that we had focused too much on the literal meaning of the company. We decided to break down the company’s description into smaller pieces and this helped design a website that was more in line with the company’s overall goals. Through this process, we made sure to continually communicate with our client by showing them our ideas and rough work. This ultimately helped resolve the problem and led to a completed prototype that our team and client was proud&nbsp;of.</p>
+            
+            <p><font size="4">My Contributions</font></p>
+            <p>For this project, I contributed to the design of the company logo and the Discover page. For my design of the logo, I first conducted research about our client’s main goals and used this information to design the logo. I wanted the logo to connect to their target market and therefore created it featuring their three customer groups. The logo is composed of a location pin for the venue, a record for the artist, and headphones for the audience. Once we had finished the designs for the logo, I then created a mock-up design of the Discover page to present to our client. When creating the final design, I incorporated a search menu on top of the mapping display to allow users to search for events and click on them to learn more about that&nbsp;venue.</p>
+            
+            <p><font size="4">Skills Learned</font></p>
+            <p>A skill that I used effectively in this project was my leadership skills. Being the project manager, I made sure to initiate meetings with my team to discuss project ideas as well as with our client to broadcast our designs. When we ran into the problem of our client disliking our ideas, I ensured that my team stayed calm and didn’t overreact to our client’s concerns. I frequently communicated with our client through emails to keep them up to date with our work. Finally, I made sure that everyone in our group had a part to work on for the project and regularly checked up on them to make sure that they weren’t struggling and if they needed any assistance with their&nbsp;work.</p>
 	</div>
     </td>
 </tr>
@@ -327,35 +448,7 @@ img{
     <td>
         <div id = "return">
            <br>
-           <a href="work"><b>RETURN TO WORK</b></a> 
-        </div>
-    </td>
-</tr>
-</table>
-</div>
-    
-<div id="table4">
-<table border="0" style="width: auto">
-               
-<tr>
-    <td>
-        <div id = "Homeheader">
-           <p align="center"> WEB-SITE BRAND DEV-ELOP-MENT: PLU-GGED </p>
-        </div>
-           
-        <div id = "homeText">
-	   <p>Plugged is a prototype website that was a group project made for my digital imaging course. We were required to design a website that would help develop a brand for a business. For this project, we were assigned to a business called Plugged. Plugged is the intermediary between venues, artists, and audiences. They initiate communications between the involved parties, create a community with common interests and promote new music. Our main challenge when creating this website was being able to connect Plugged's three primary customer groups; the artist, the audience, and the venue. We wanted the pages for each customer group to be unique, while still maintaining connection with one another. An artist would be able to benefit from using Plugged as it would enable them to collaborate with other musicians and various venues. Audiences can discover new music, artists and new venues to visit, and venues can use Plugged to grow their business by seamlessly connecting with artists who are looking to perform.</p>
-	   <p>For this project, I contributed to the design of the Discover page and the company logo. For my design of the logo, I first conducted research about our client’s main goals and used this information to design the logo. I wanted the logo to connect to their target market and therefore created it featuring their three customer groups. The logo is composed of a location pin for the venue, a record for the artist, and headphones for the audience. Once we had finished the designs for the logo, I then created a mock-up design of the Discover page to present to our client. When creating the final design, I incorporated a search menu on top of the mapping display to allow users to search for events and click on them to learn more about that venue.</p>
-	   <p>A skill that I used effectively in this project was my leadership skills. Throughout the stages of our designs, I initiated meetings for both our team to discuss project ideas as well as with our client to broadcast our designs. I frequently communicated with our client through emails to keep them up to date with our work. I also made sure that everyone in our group had a part to work on for the project and regularly checked up on each member to make sure that they weren’t struggling and if they needed any assistance with their work.</p>
-	</div> 
-    </td>
-</tr>
-
-<tr>
-    <td>
-        <div id = "return">
-           <br>
-           <a href="work"><b>RETURN TO WORK</b></a> 
+           <a href="work"> <font color = "black"> <b> Return to Work </b> </font> </a>
         </div>
     </td>
 </tr>
@@ -363,29 +456,77 @@ img{
 </div>
     
 <div id = "table3">    
-<table border="0" style="width: 100%" >
+<table border="0" style="width: auto" >
 
 <tr>
-    <td colspan="1">
+    <td colspan="2">
        <a href="https://xd.adobe.com/view/87fd9c10-c1bb-49b8-b82f-79e1e5b9590f/" target ="_blank"> <img src = "Plugged_Website_Homepage.jpg"alt="Plugged website homepage"/> </a> 
     </td> 
 </tr>
          
 <tr>
-    <td>
-        <img src = "Plugged_Sign-In.jpg" alt="Plugged website login screen"/>
+    <td colspan="2">
+        <img src = "Plugged_Website_Discover.jpg" alt="Plugged website discover page"/>
     </td>
 </tr>
 
 <tr>
     <td>
-        <img src = "Plugged_Website_Venue.jpg"alt="Plugged website artist page"/>
+        <img src = "plugged-full-logo.png"alt="Plugged full logo"/>
+    </td>
+    
+    <td>
+       <img src = "final-logo-white.png"alt="Plugged white logo"/>
+    </td>
+</tr>
+    
+<tr>
+    <td>
+        <img src = "brainstorming.jpg"alt="Brainstorming whiteboard"/>
+    </td>
+
+    
+    <td>
+        <img src = "logo-website-iterations.jpg"alt="Logo & website iterations"/>
+    </td>
+</tr>
+</table>
+</div>
+    
+<div id = "table5">    
+<table border="0" style="width: 100%">
+
+<tr>
+    <td colspan="1">
+   <a href="https://xd.adobe.com/view/87fd9c10-c1bb-49b8-b82f-79e1e5b9590f/" target ="_blank"> <img src = "Plugged_Website_Homepage.jpg"alt="Plugged website homepage"/> </a> 
+    </td> 
+</tr>
+    
+    <tr>
+    <td>
+       <img src = "Plugged_Website_Discover.jpg" alt="Plugged website discover page"/>
     </td>
 </tr>
          
 <tr>
-    <td colspan="1">
-       <p> Check out our website here: <a href="https://xd.adobe.com/view/87fd9c10-c1bb-49b8-b82f-79e1e5b9590f/" target ="_blank">https://xd.adobe.com/view/87fd9c10-c1bb-49b8-b82f-79e1e5b9590f/</a></p>
+    <td>
+       <img src = "plugged-full-logo.png"alt="Plugged full logo"/>
+    </td>
+</tr>
+
+<tr>
+    <td>
+       <img src = "final-logo-white.png"alt="Plugged white logo"/>
+    </td>
+</tr>
+<tr>
+    <td>
+       <img src = "brainstorming.jpg"alt="Brainstorming whiteboard"/>
+    </td>
+</tr>
+<tr>
+    <td>
+       <img src = "logo-website-iterations.jpg"alt="Logo & website iterations"/>
     </td>
 </tr>
 </table>
@@ -396,7 +537,7 @@ img{
                
 <tr>
     <td>
-        <a href="work"> <b> RETURN TO WORK </b></a>
+        <a href="work"> <font color = "black"> <b> Return to Work </b> </font> </a>
     </td>
 </tr>
 </table>
