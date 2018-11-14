@@ -42,11 +42,11 @@ li a {
 }
 
 li a:hover:not(.active) {
-   color: black;
+    color: black;
 }
     
 #Menubar{
-   font-size: 12px;
+    font-size: 12px;
 }
         
 #Intro{
@@ -56,12 +56,44 @@ li a:hover:not(.active) {
     margin-right: 920px;
     margin-left: 0px;
 }
-	
+
 #RyanLogo{
-   max-width: 75px;
-   margin-top: 2px;
-   margin-bottom: 0px;
-   margin-left: 7px;
+    max-width: 75px;
+    margin-top: 2px;
+    margin-bottom: 0px;
+    margin-left: 7px;
+}
+    
+.Pic1{  
+    position: relative;
+    padding-bottom: 54%; /* ratio of image height to width */
+    left: 11px;
+    height: 0;
+    top: 10px;
+    overflow: hidden;
+}
+
+.Pic1 img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;    
+}
+    
+.Pic2{   
+    position: relative;
+    padding-bottom: 54%; /* ratio of image height to width */
+    left: 11px;
+    height: 0;
+    top: -30px;
+    overflow: hidden;
+}
+
+.Pic2 img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
     
 #Homeheader{
@@ -76,26 +108,63 @@ li a:hover:not(.active) {
 .embed-container { 
     max-width: 880px;      
     margin-left: auto;
-    margin-top: 90px;
+    margin-top: 80px;
  } 
     
-#table2, #table2 th, #table2 td {
-     line-height: 150%;
-     font-family: "Verdana", sans-serif;
-     font-size: 14px;
+#table5{
+   display: none;
 }
     
-#table2 {
+#table3, #table3 th, #table3 td {
+    line-height: 150%;
+    font-family: "Verdana", sans-serif;
+    font-size: 14px;
+}
+    
+#table3 {
+    display: none;
     max-width: 877px;    
     padding-right: 900px;
     margin-left: auto;
     margin-top: -536px;
 }
     
+#table3{
+    display: none;
+}
+    
+#table1, #table1 th, #table1 td  {
+    font-family: "Verdana", sans-serif;
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+    border-spacing: 15px;
+    padding-bottom: 15px;
+}
+    
+#table1{
+    max-width: 880px;
+    margin-left: auto;
+    margin-top: 58px;
+}
+    
+#table2, #table2 th, #table2 td {
+    line-height: 150%;
+    font-family: "Verdana", sans-serif;
+    font-size: 14px;
+}
+    
+#table2 {
+    max-width: 877px;    
+    padding-right: 900px;
+    margin-left: auto;
+    margin-top: -1566px;
+}
+    
 #table3, #table3 th, #table3 td {
-     line-height: 150%;
-     font-family: "Verdana", sans-serif;
-     font-size: 14px;
+    line-height: 150%;
+    font-family: "Verdana", sans-serif;
+    font-size: 14px;
 }
     
 #table3 {
@@ -125,37 +194,62 @@ li a:hover:not(.active) {
     padding-top: 10px;
 }
     
-a:link {
-    color: black;
-    background-color: transparent;
-    text-decoration: none;
+@media all and (max-width: 1240px) {
+    
+#table3, #table3 th, #table3 td  {
+    font-family: "Verdana", sans-serif;
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+    border-spacing: 5px;
+    margin-left: 0px;
+    margin-top: 50px;
 }
-
-a:hover {
-    color: black;
-    background-color: transparent;
-    text-decoration: none;
-}
-	
-a:active {
-    color: black;
-    background-color: transparent;
-    text-decoration: none;
+         
+#table3{
+    margin: 0 auto;
+    max-width: 899px;
+    display: block;
+    margin-left: auto;
+    margin-top: 30px;
 }
     
-@media all and (max-width: 1250px) {
-
-#table2{
+#table1{
     display: none;
 }
-        
-#table3{
-     display: block;
+    
+.Pic1{     
+    position: relative;
+    padding-bottom: 54%; /* ratio of image height to width */
+    left: 0px;
+    height: 0;
+    top: -20px;
+    overflow: hidden;
 }
+
+.Pic1 img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
     
-@media all and (max-width: 1155px) {
-        
+.Pic2{
+    position: relative;
+    padding-bottom: 54%; /* ratio of image height to width */
+    left: 0px;
+    height: 0;
+    top: -35px;
+    overflow: hidden;
+}
+
+.Pic2 img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+            
 .main {
     margin: 1250 auto;
     margin-bottom: 125px;
@@ -179,15 +273,11 @@ a:active {
     width: 100%;
     height: 100%;   
 }
-        
-#table3{
-    display: none;
-}
-        
+            
 #table2{
     display: block;
     margin-right: 0px;
-    margin-top: 30px;
+    margin-top: 40px;
     max-width: none;
     padding-right: 0px;
 }
@@ -205,14 +295,92 @@ a:active {
  }
         
 #return{
-     display: none;
+    display: none;
  }
         
  #return2{
-     display: block;
-     max-width: 877px;
-     margin-right: auto;
-     margin-top: 15px;
+    display: block;
+    max-width: 877px;
+    margin-right: auto;
+    margin-top: -25px;
+}
+}
+    
+@media all and (max-width: 500px) {
+        
+#table3{
+    display: none;
+}
+    
+#table5, #table5 th, #table5 td  {
+    font-family: "Verdana", sans-serif;
+    font-size: 12px;
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 50px;
+}
+         
+#table5{
+    margin: 0 auto;
+    max-width: 899px;
+    display: block;
+    margin-left: auto;
+    margin-top: 30px;
+}
+    
+ .illustrator{
+    position: relative;
+    padding-bottom: 54%; /* ratio of image height to width */
+    left: 0px;
+    height: 0;
+    top: -20px;
+    overflow: hidden;
+}
+
+.illustrator img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}   
+    
+.after-effects{  
+    position: relative;
+    padding-bottom: 54%; /* ratio of image height to width */
+    left: 0px;
+    height: 0;
+    top: 10px;
+    overflow: hidden;
+}
+
+.after-effects img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+    
+#return2{
+    display: block;
+    max-width: 877px;
+    margin-right: auto;
+    margin-top: 15px;
+}
+}
+    
+@media all and (max-width: 400px) {
+    
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    margin-top: 18px;
+    padding: 14px 10px;
+    text-decoration: none;
+}
+    
+#Menubar{
+    font-size: 11px;
 }
 }
     
@@ -224,81 +392,121 @@ a:active {
  
 <ul>
     <div id = "Menubar"> 
-        <li style="float:right"><a href="work">WORK</a></li>
-        <li style="float:right"><a href="about">ABOUT</a></li>
-        <li style="float:right"><a href="/">HOME</a></li>
+        <li style="float:right"><a href="contact">Contact</a></li>
+        <li style="float:right"><a href="work">Work</a></li>
+        <li style="float:right"><a href="about">About</a></li>
+        <li style="float:right"><a href="/">Home</a></li>
         
-        <div id = "RyanLogo">
+    <div id = "RyanLogo">
         <a href="/"><img src = "RM.png" alt="RM Logo" width="75"/></a> 
-        </div>
+    </div>
     </div>
 </ul>
      
 <div id="video1">
      <div class='embed-container'><iframe src='https://player.vimeo.com/video/193378141' width="877" height="493" frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
 </div>
+
+<div id = "table1"> 
+<div class="Pic2">
+   <img src = "Illustrator.jpg" alt="Designs in Adobe Illustrator"/>
+</div>
+     
+<div class="Pic1">
+   <img src = "After-Effects.jpg" alt="Designs in Adobe After Effects"/>
+</div>
+</div>
    
 <div id="table2">
-     <table border="0" style="width: auto">
-    
-    <tr>
+<table border="0" style="width: auto">
+<tr>
     <td>
-    <div id = "Homeheader">
-      <p align="center"> ANIMATED INTERVIEW: THE COAT HANGER EXPERIENCE </p>
-    </div>
-    <div id = "homeText">
-       <p>This animation was part of a final group project for my digital media course. This project revolved around the idea of visually storytelling a pre-recorded interview. When we were presented with this project, our team first decided to get as many recordings as we could by going around our campus and recording different individuals. This allowed us to obtain a variety of recordings all with different potential. We choose the recording of a woman's experience as a child with her brother because of the ability to incorporate a variety of different themes throughout the video as well as being able to have creative freedom with each scene. We then had a brainstorming session to determine what our characters and the environment in our animation would look like. This was important because we needed to make sure that there was going to be consistency among our designs. I was responsible for animating the scene when the hanger gets caught in the sister’s eye. I used Adobe After Effects to animate this scene and created all my design elements throughout this program. There were many challenges that I had to overcome when animating this scene. For example, when I first designed each character, I created them as a whole design, but then when I started animating, I found out that the entire body was moving. This required me to re-design my character as individual pieces allowing me to animate each limb separately to make them move. Upon completion of everybody’s sections, I finalized the animation by joining the scenes together and matching the audio with the lip-syncing scenes.</p>
-       <p>There were certain skills that I found I was able to effectively use throughout this project including my communication and leadership skills. Every week, I would make sure to contact each of my group members to check in with them to see how they were doing and if they needed any help. I would conduct weekly team meetings to allow everyone to show their progress and to determine whether our designs were following a consistent pattern. Finally, I regularly communicated with my group over Facebook and email, sending them pictures and short video clips of my designs to obtain feedback before going any further into the animation.</p>
-    </div>
+        <div id = "Homeheader">
+           <p align="center"> Animated Interview: The Coat Hanger Experience</p>
+        </div>
+        <div id = "homeText">
+            <p><b>Roles:</b> Animator, Video Editor</p>  
+            <p><b>Summary:</b> An animation of a pre-recorded interview about a woman’s experience as a child with her&nbsp;brother.</p>
+            <p><b>Tools Used:</b> Adobe Premiere Pro, Adobe After Effects, Adobe Illustrator, Zoom H4n&nbsp;Pro</p>
+            <p><b>Created by:</b> Ryan Merkley, Daniel Recchia, Matthew Southgate, Minku Han, Eric&nbsp;Lamoureux </p>           
+            _____
+            <br>
+            <br>
+            <p><font size="4">The Challenge</font></p>
+            <p>The challenge for this group project revolved around visually storytelling a pre-recorded interview. The focus was on effectively utilizing sound recording and editing, animation, character development, and creative problem&nbsp;solving.</p>
             
-     </td>
-     </tr>
-    <tr>
-    <td>
-        <div id = "return">
-           <br>
-           <a href="work"> <b> RETURN TO WORK </b></a> 
-        </div>
-      </td>
-  </tr>
-</table>
-</div>
-     
- <div id="table3">
- <table border="0" style="width: auto">
-               
-  <tr>
-    <td>
-      <div id = "Homeheader">
-         <p align="center"> ANI-MATED INTER-VIEW: THE COAT HAN-GER EXPER-IENCE </p>
-      </div>
-      <div id = "homeText">
-	 <p>This animation was part of a final group project for my digital media course. This project revolved around the idea of visually storytelling a pre-recorded interview. When we were presented with this project, our team first decided to get as many recordings as we could by going around our campus and recording different individuals. This allowed us to obtain a variety of recordings all with different potential. We choose the recording of a woman's experience as a child with her brother because of the ability to incorporate a variety of different themes throughout the video as well as being able to have creative freedom with each scene. We then had a brainstorming session to determine what our characters and the environment in our animation would look like. This was important because we needed to make sure that there was going to be consistency among our designs. I was responsible for animating the scene when the hanger gets caught in the sister’s eye. I used Adobe After Effects to animate this scene and created all my design elements throughout this program. There were many challenges that I had to overcome when animating this scene. For example, when I first designed each character, I created them as a whole design, but then when I started animating, I found out that the entire body was moving. This required me to re-design my character as individual pieces allowing me to animate each limb separately to make them move. Upon completion of everybody’s sections, I finalized the animation by joining the scenes together and matching the audio with the lip-syncing scenes.</p>
-	 <p>There were certain skills that I found I was able to effectively use throughout this project including my communication and leadership skills. Every week, I would make sure to contact each of my group members to check in with them to see how they were doing and if they needed any help. I would conduct weekly team meetings to allow everyone to show their progress and to determine whether our designs were following a consistent pattern. Finally, I regularly communicated with my group over Facebook and email, sending them pictures and short video clips of my designs to obtain feedback before going any further into the animation.</p>
-      </div>
-    </td>
-  </tr>
-  <tr>
-    <td>
-        <div id = "return">
-           <br>
-           <a href="work"> <b> RETURN TO WORK </b></a> 
+            <p><font size="4">The Process</font></p>
+            <p>When we were presented with this project, our team decided to conduct as many interviews as possible by going around our university campus and recording different individuals. This allowed us to acquire a variety of recordings all with different potential. Our team chose the recording of a woman's experience as a child because of the ability to incorporate a variety of themes throughout the video as well as having the creative freedom with each scene. We then had a brainstorming session to determine what the characters and environment should look like. This was important because we needed to make sure that there was consistency among the designs. After coming to a consensus for the designs we began our individual sections of the animation. To ensure that we maintained consistency, we would have weekly team meetings to critique and go over everyone’s&nbsp;designs.</p>
+            
+            <p>After completing the animation, we then scheduled a feedback session. During this session we had multiple students watch and review our animation. This was helpful as it gave us insight into some overlooked issues such as the sound quality being low, the video lagging and the background environment shaking. After fixing these errors, we presented our final animation to our class where we received a positive response from both our professor and classmates as well as obtaining a grade of&nbsp;93%.</p>
+            
+            <p><font size="4">My Contributions</font></p>
+            <p>I was responsible for animating the scene when the hanger gets caught in the sister’s eye. While animating this scene, I encountered a significant problem with my designs. When I initially designed each character, I created them as a single design, but when I started animating, I found out that the entire body was moving. To fix this I re-designed the characters body parts as individual pieces, and this allowed me to animate each limb separately to make them move. Upon the completion of everyone’s sections, I was also responsible for finalizing the animation. I used Adobe Premiere Pro to join the scenes together and match the audio with the lip&#8209;syncing scenes.</p>
+            
+            <p><font size="4">Skills Learned</font></p>
+            <p>Skills that I found I was able to effectively use throughout this project including my communication and leadership skills. Every week, I would make sure to contact each of my group members to check in with them to see how they were doing and if they needed any help. I would also conduct weekly team meetings to allow everyone to show their progress and to determine whether our designs were following a consistent pattern. Finally, I regularly communicated with my group over Facebook Messenger and email, sending them pictures and short video clips of my designs to obtain feedback before going any further into the&nbsp;animation.</p>
         </div>
     </td>
-  </tr>
+</tr>
+<tr>
+    <td>
+        <div id = "return">
+          <br>
+          <a href="work" class="button2" style="text-decoration: none"> <font color = "black"> <b>Return to Work</b> </font></a>
+        </div>
+    </td>
+</tr>
 </table>
 </div>
-     
+          
 <div id="video2">
     <div class='embed-container'><iframe src='https://player.vimeo.com/video/193378141' width="877" height="493" frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
 </div>
-   
-<div id="return2">
-    <table border="0" style="width: auto">
-               
+    
+<div id = "table3">    
+<table border="0" style="width: 100%">
+<tr>
+   <td>
+       <div class="Pic2">
+          <img src = "Illustrator.jpg" alt="Designs in Adobe Illustrator"/>
+       </div>
+   </td> 
+</tr>
+<tr>
+  <td>
+      <div class="Pic1">
+         <img src = "After-Effects.jpg" alt="Designs in Adobe After Effects"/>
+      </div>
+  </td> 
+</tr>
+</table>
+</div>
+    
+<div id = "table5">    
+<table border="0" style="width: 100%">
 <tr>
     <td>
-        <a href="work"> <b> RETURN TO WORK </b></a>
+        <div class="illustrator">
+           <img src = "Illustrator.jpg" alt="Designs in Adobe Illustrator"/>
+        </div>
+    </td> 
+</tr>
+    
+<tr>
+    <td>
+        <div class="after-effects">
+           <img src = "After-Effects.jpg" alt="Designs in Adobe After Effects"/>
+        </div>
+    </td> 
+</tr>
+</table>
+</div>
+   
+<div id="return2">
+<table border="0" style="width: auto">
+<tr>
+    <td>
+        <a href="work" class="button2" style="text-decoration: none"> <font color = "black" size ="2"> <b>Return to Work</b> </font></a>
     </td>
 </tr>
 </table>
